@@ -1,0 +1,67 @@
+@use 'variables' as v;
+
+html {
+	font-size: 6.25%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16rem;
+	font-family: v.$fuente_principal;
+	min-height: 100vh;
+	height: auto;
+	background-color: v.$nata;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+	color: v.$negro;
+}
+
+h1 {
+	font-size: 40rem;
+}
+
+h2 {
+	font-size: 36rem;
+}
+
+h3 {
+	font-size: 30rem;
+}
+
+p {
+	font-size: 18rem;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor {
+	width: min(95%, 520rem);
+
+	margin: 0 auto;
+}

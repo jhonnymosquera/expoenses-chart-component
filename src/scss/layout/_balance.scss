@@ -1,0 +1,20 @@
+@use '../base/variables' as v;
+
+.balance {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: v.$rojo;
+	padding: 25rem;
+	border-radius: 10rem;
+	margin-bottom: 20rem;
+
+	p {
+		color: v.$nata;
+		margin-bottom: 10rem;
+	}
+
+	h3 {
+		color: v.$naranja;
+	}
+}
