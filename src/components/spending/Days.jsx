@@ -1,12 +1,12 @@
 import { useContext, useState } from 'react';
 import { Context } from '../../context/Context';
 
-function Days({ days, index }) {
-	const { day, amount } = days;
+function Days({ days }) {
+	const { day, amount, getDay } = days;
 	const { hoy } = useContext(Context);
 	const [barState, setBarState] = useState('');
 
-	const bar = index === hoy ? true : null;
+	const bar = getDay === hoy ? true : null;
 
 	return (
 		<div className="day">

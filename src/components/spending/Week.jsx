@@ -7,8 +7,8 @@ function Week() {
 
 	return (
 		<div className="week">
-			{weekInfo.map((days, index) => (
-				<Days key={days.day} days={days} index={index} />
+			{weekInfo.map((days) => (
+				<Days key={days.day} days={days} />
 			))}
 		</div>
 	);

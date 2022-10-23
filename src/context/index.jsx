@@ -9,7 +9,7 @@ function ContexProvider(props) {
 	const maxAmount = Math.max(...amounsts);
 
 	const time = Date.now();
-	const hoy = new Date(time).getDay() - 1;
+	const hoy = new Date(time).getDay();
 
 	return (
 		<Context.Provider value={{ weekInfo, setWeekInfo, maxAmount, hoy }}>
